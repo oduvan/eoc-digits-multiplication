@@ -1,0 +1,46 @@
+<img class="for_info_only half" title="juggler" src="{{MEDIA}}juggler.png" alt="juggler" style="max-height: 300px;float: left"/>
+<p>
+    Дано положительное целое число.
+    Вам необходимо подсчитать произведение всех цифр в этом числе, за исключением нулей.
+</p>
+
+<p>
+    Для примера: Дано число 123405. Результат будет: 1*2*3*4*5=120 (не забудьте исключить нули).
+</p>
+
+<p>
+    <strong>Входные данные: </strong> Положительное целое число.
+</p>
+
+<p>
+    <strong>Выходные данные: </strong> Произведение цифр как целочисленное (int).
+</p>
+
+<div style="clear: both;"></div>
+
+<div class="for_info_only">
+    <p>
+        <strong>Примеры:</strong>
+    </p>
+    <pre class="brush: python">{% if interpreter.slug == "js-node" %}
+digitsMultip(123405) == 120
+digitsMultip(999) == 729
+digitsMultip(1000) == 1
+digitsMultip(1111) == 1
+{% else %}
+checkio(123405) == 120
+checkio(999) == 729
+checkio(1000) == 1
+checkio(1111) == 1
+{% endif %}</pre>
+</div>
+
+<p class="for_info_only">
+    <strong>Зачем это нужно:</strong>
+    Эта задача может научить вас как использовать простую конвертацию типов данных.
+</p>
+
+<p>
+    <strong>Предусловия: </strong>
+        0 &lt; number &lt; 10<sup>6</sup>
+</p>
