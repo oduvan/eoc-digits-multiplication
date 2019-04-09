@@ -7,35 +7,7 @@ requirejs(['ext_editor_io', 'jquery_190'],
         var io = new extIO({
             functions: {
                 js: 'digitsMultip',
-                python: 'checkio'
-            },
-            tryit:function (this_e) {
-                $tryit = this_e.extSetHtmlTryIt(this_e.getTemplate('tryit')).find(".tryit-content");
-                $tryit.find('.bn-check').click(function (e) {
-                    e.preventDefault();
-                    var $input = $tryit.find(".tool .input-number");
-                    var data = Number($input.val());
-                    if (!isNaN(data)) {
-                        data = Number(data);
-                    }
-                    this_e.extSendToConsoleCheckiO(data);
-                    e.stopPropagation();
-                    return false;
-                });
-
-                $tryit.find('.bn-random').click(function (e) {
-                    e.preventDefault();
-                    var numb = Math.floor(Math.random() * 10000);
-                    $tryit.find(".tool .input-number").val(numb);
-                    return false;
-                });
-
-            },
-            retConsole: function (ret) {
-                e.preventDefault();
-                var numb = Math.floor(Math.random() * 10000);
-                $tryit.find(".tool .input-number").val(numb);
-                return false;
+                python: 'digits_multip'
             }
         });
         io.start();
